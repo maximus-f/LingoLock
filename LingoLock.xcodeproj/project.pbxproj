@@ -1,0 +1,587 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB1900432C7D215E0071D754 /* LingoLockApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1900422C7D215E0071D754 /* LingoLockApp.swift */; };
+		BB1900452C7D215E0071D754 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1900442C7D215E0071D754 /* ContentView.swift */; };
+		BB1900472C7D215F0071D754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1900462C7D215F0071D754 /* Assets.xcassets */; };
+		BB19004A2C7D215F0071D754 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1900492C7D215F0071D754 /* Preview Assets.xcassets */; };
+		BB1900542C7D215F0071D754 /* LingoLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1900532C7D215F0071D754 /* LingoLockTests.swift */; };
+		BB19005E2C7D215F0071D754 /* LingoLockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19005D2C7D215F0071D754 /* LingoLockUITests.swift */; };
+		BB1900602C7D215F0071D754 /* LingoLockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19005F2C7D215F0071D754 /* LingoLockUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BB1900502C7D215F0071D754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1900372C7D215E0071D754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB19003E2C7D215E0071D754;
+			remoteInfo = LingoLock;
+		};
+		BB19005A2C7D215F0071D754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1900372C7D215E0071D754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB19003E2C7D215E0071D754;
+			remoteInfo = LingoLock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BB19003F2C7D215E0071D754 /* LingoLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LingoLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1900422C7D215E0071D754 /* LingoLockApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoLockApp.swift; sourceTree = "<group>"; };
+		BB1900442C7D215E0071D754 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BB1900462C7D215F0071D754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB1900492C7D215F0071D754 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BB19004F2C7D215F0071D754 /* LingoLockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LingoLockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1900532C7D215F0071D754 /* LingoLockTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoLockTests.swift; sourceTree = "<group>"; };
+		BB1900592C7D215F0071D754 /* LingoLockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LingoLockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB19005D2C7D215F0071D754 /* LingoLockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoLockUITests.swift; sourceTree = "<group>"; };
+		BB19005F2C7D215F0071D754 /* LingoLockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoLockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB19003C2C7D215E0071D754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB19004C2C7D215F0071D754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1900562C7D215F0071D754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB1900362C7D215E0071D754 = {
+			isa = PBXGroup;
+			children = (
+				BB1900412C7D215E0071D754 /* LingoLock */,
+				BB1900522C7D215F0071D754 /* LingoLockTests */,
+				BB19005C2C7D215F0071D754 /* LingoLockUITests */,
+				BB1900402C7D215E0071D754 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BB1900402C7D215E0071D754 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB19003F2C7D215E0071D754 /* LingoLock.app */,
+				BB19004F2C7D215F0071D754 /* LingoLockTests.xctest */,
+				BB1900592C7D215F0071D754 /* LingoLockUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB1900412C7D215E0071D754 /* LingoLock */ = {
+			isa = PBXGroup;
+			children = (
+				BB1900422C7D215E0071D754 /* LingoLockApp.swift */,
+				BB1900442C7D215E0071D754 /* ContentView.swift */,
+				BB1900462C7D215F0071D754 /* Assets.xcassets */,
+				BB1900482C7D215F0071D754 /* Preview Content */,
+			);
+			path = LingoLock;
+			sourceTree = "<group>";
+		};
+		BB1900482C7D215F0071D754 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BB1900492C7D215F0071D754 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BB1900522C7D215F0071D754 /* LingoLockTests */ = {
+			isa = PBXGroup;
+			children = (
+				BB1900532C7D215F0071D754 /* LingoLockTests.swift */,
+			);
+			path = LingoLockTests;
+			sourceTree = "<group>";
+		};
+		BB19005C2C7D215F0071D754 /* LingoLockUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BB19005D2C7D215F0071D754 /* LingoLockUITests.swift */,
+				BB19005F2C7D215F0071D754 /* LingoLockUITestsLaunchTests.swift */,
+			);
+			path = LingoLockUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB19003E2C7D215E0071D754 /* LingoLock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1900632C7D215F0071D754 /* Build configuration list for PBXNativeTarget "LingoLock" */;
+			buildPhases = (
+				BB19003B2C7D215E0071D754 /* Sources */,
+				BB19003C2C7D215E0071D754 /* Frameworks */,
+				BB19003D2C7D215E0071D754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LingoLock;
+			productName = LingoLock;
+			productReference = BB19003F2C7D215E0071D754 /* LingoLock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BB19004E2C7D215F0071D754 /* LingoLockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1900662C7D215F0071D754 /* Build configuration list for PBXNativeTarget "LingoLockTests" */;
+			buildPhases = (
+				BB19004B2C7D215F0071D754 /* Sources */,
+				BB19004C2C7D215F0071D754 /* Frameworks */,
+				BB19004D2C7D215F0071D754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB1900512C7D215F0071D754 /* PBXTargetDependency */,
+			);
+			name = LingoLockTests;
+			productName = LingoLockTests;
+			productReference = BB19004F2C7D215F0071D754 /* LingoLockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BB1900582C7D215F0071D754 /* LingoLockUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB1900692C7D215F0071D754 /* Build configuration list for PBXNativeTarget "LingoLockUITests" */;
+			buildPhases = (
+				BB1900552C7D215F0071D754 /* Sources */,
+				BB1900562C7D215F0071D754 /* Frameworks */,
+				BB1900572C7D215F0071D754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BB19005B2C7D215F0071D754 /* PBXTargetDependency */,
+			);
+			name = LingoLockUITests;
+			productName = LingoLockUITests;
+			productReference = BB1900592C7D215F0071D754 /* LingoLockUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB1900372C7D215E0071D754 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					BB19003E2C7D215E0071D754 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					BB19004E2C7D215F0071D754 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = BB19003E2C7D215E0071D754;
+					};
+					BB1900582C7D215F0071D754 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = BB19003E2C7D215E0071D754;
+					};
+				};
+			};
+			buildConfigurationList = BB19003A2C7D215E0071D754 /* Build configuration list for PBXProject "LingoLock" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB1900362C7D215E0071D754;
+			productRefGroup = BB1900402C7D215E0071D754 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB19003E2C7D215E0071D754 /* LingoLock */,
+				BB19004E2C7D215F0071D754 /* LingoLockTests */,
+				BB1900582C7D215F0071D754 /* LingoLockUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB19003D2C7D215E0071D754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB19004A2C7D215F0071D754 /* Preview Assets.xcassets in Resources */,
+				BB1900472C7D215F0071D754 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB19004D2C7D215F0071D754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1900572C7D215F0071D754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB19003B2C7D215E0071D754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1900452C7D215E0071D754 /* ContentView.swift in Sources */,
+				BB1900432C7D215E0071D754 /* LingoLockApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB19004B2C7D215F0071D754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1900542C7D215F0071D754 /* LingoLockTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB1900552C7D215F0071D754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB19005E2C7D215F0071D754 /* LingoLockUITests.swift in Sources */,
+				BB1900602C7D215F0071D754 /* LingoLockUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BB1900512C7D215F0071D754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB19003E2C7D215E0071D754 /* LingoLock */;
+			targetProxy = BB1900502C7D215F0071D754 /* PBXContainerItemProxy */;
+		};
+		BB19005B2C7D215F0071D754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB19003E2C7D215E0071D754 /* LingoLock */;
+			targetProxy = BB19005A2C7D215F0071D754 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		BB1900612C7D215F0071D754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB1900622C7D215F0071D754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB1900642C7D215F0071D754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LingoLock/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.perotin.LingoLock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB1900652C7D215F0071D754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"LingoLock/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.perotin.LingoLock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BB1900672C7D215F0071D754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.perotin.LingoLockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LingoLock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LingoLock";
+			};
+			name = Debug;
+		};
+		BB1900682C7D215F0071D754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.perotin.LingoLockTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LingoLock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LingoLock";
+			};
+			name = Release;
+		};
+		BB19006A2C7D215F0071D754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.perotin.LingoLockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LingoLock;
+			};
+			name = Debug;
+		};
+		BB19006B2C7D215F0071D754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.perotin.LingoLockUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LingoLock;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB19003A2C7D215E0071D754 /* Build configuration list for PBXProject "LingoLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1900612C7D215F0071D754 /* Debug */,
+				BB1900622C7D215F0071D754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1900632C7D215F0071D754 /* Build configuration list for PBXNativeTarget "LingoLock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1900642C7D215F0071D754 /* Debug */,
+				BB1900652C7D215F0071D754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1900662C7D215F0071D754 /* Build configuration list for PBXNativeTarget "LingoLockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1900672C7D215F0071D754 /* Debug */,
+				BB1900682C7D215F0071D754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB1900692C7D215F0071D754 /* Build configuration list for PBXNativeTarget "LingoLockUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB19006A2C7D215F0071D754 /* Debug */,
+				BB19006B2C7D215F0071D754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB1900372C7D215E0071D754 /* Project object */;
+}
