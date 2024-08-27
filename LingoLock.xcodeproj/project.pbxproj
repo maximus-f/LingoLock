@@ -14,6 +14,14 @@
 		BB1900542C7D215F0071D754 /* LingoLockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1900532C7D215F0071D754 /* LingoLockTests.swift */; };
 		BB19005E2C7D215F0071D754 /* LingoLockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19005D2C7D215F0071D754 /* LingoLockUITests.swift */; };
 		BB1900602C7D215F0071D754 /* LingoLockUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB19005F2C7D215F0071D754 /* LingoLockUITestsLaunchTests.swift */; };
+		BB19008E2C7D3C040071D754 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1900722C7D3B870071D754 /* WidgetKit.framework */; };
+		BB19008F2C7D3C040071D754 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB1900742C7D3B870071D754 /* SwiftUI.framework */; };
+		BB1900922C7D3C040071D754 /* LingoLockWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1900912C7D3C040071D754 /* LingoLockWidgetBundle.swift */; };
+		BB1900942C7D3C040071D754 /* LingoLockWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1900932C7D3C040071D754 /* LingoLockWidgetLiveActivity.swift */; };
+		BB1900962C7D3C040071D754 /* LingoLockWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1900952C7D3C040071D754 /* LingoLockWidget.swift */; };
+		BB1900982C7D3C040071D754 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB1900972C7D3C040071D754 /* AppIntent.swift */; };
+		BB19009A2C7D3C050071D754 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB1900992C7D3C050071D754 /* Assets.xcassets */; };
+		BB19009E2C7D3C050071D754 /* LingoLockWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BB19008D2C7D3C040071D754 /* LingoLockWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +39,28 @@
 			remoteGlobalIDString = BB19003E2C7D215E0071D754;
 			remoteInfo = LingoLock;
 		};
+		BB19009C2C7D3C050071D754 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1900372C7D215E0071D754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB19008C2C7D3C040071D754;
+			remoteInfo = LingoLockWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BB1900882C7D3B890071D754 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				BB19009E2C7D3C050071D754 /* LingoLockWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		BB19003F2C7D215E0071D754 /* LingoLock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LingoLock.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +73,15 @@
 		BB1900592C7D215F0071D754 /* LingoLockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LingoLockUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB19005D2C7D215F0071D754 /* LingoLockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoLockUITests.swift; sourceTree = "<group>"; };
 		BB19005F2C7D215F0071D754 /* LingoLockUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoLockUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BB1900722C7D3B870071D754 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		BB1900742C7D3B870071D754 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		BB19008D2C7D3C040071D754 /* LingoLockWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LingoLockWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB1900912C7D3C040071D754 /* LingoLockWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoLockWidgetBundle.swift; sourceTree = "<group>"; };
+		BB1900932C7D3C040071D754 /* LingoLockWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoLockWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		BB1900952C7D3C040071D754 /* LingoLockWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LingoLockWidget.swift; sourceTree = "<group>"; };
+		BB1900972C7D3C040071D754 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		BB1900992C7D3C050071D754 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB19009B2C7D3C050071D754 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +106,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB19008A2C7D3C040071D754 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB19008F2C7D3C040071D754 /* SwiftUI.framework in Frameworks */,
+				BB19008E2C7D3C040071D754 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -77,6 +124,8 @@
 				BB1900412C7D215E0071D754 /* LingoLock */,
 				BB1900522C7D215F0071D754 /* LingoLockTests */,
 				BB19005C2C7D215F0071D754 /* LingoLockUITests */,
+				BB1900902C7D3C040071D754 /* LingoLockWidget */,
+				BB1900712C7D3B870071D754 /* Frameworks */,
 				BB1900402C7D215E0071D754 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +136,7 @@
 				BB19003F2C7D215E0071D754 /* LingoLock.app */,
 				BB19004F2C7D215F0071D754 /* LingoLockTests.xctest */,
 				BB1900592C7D215F0071D754 /* LingoLockUITests.xctest */,
+				BB19008D2C7D3C040071D754 /* LingoLockWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +177,28 @@
 			path = LingoLockUITests;
 			sourceTree = "<group>";
 		};
+		BB1900712C7D3B870071D754 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB1900722C7D3B870071D754 /* WidgetKit.framework */,
+				BB1900742C7D3B870071D754 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB1900902C7D3C040071D754 /* LingoLockWidget */ = {
+			isa = PBXGroup;
+			children = (
+				BB1900912C7D3C040071D754 /* LingoLockWidgetBundle.swift */,
+				BB1900932C7D3C040071D754 /* LingoLockWidgetLiveActivity.swift */,
+				BB1900952C7D3C040071D754 /* LingoLockWidget.swift */,
+				BB1900972C7D3C040071D754 /* AppIntent.swift */,
+				BB1900992C7D3C050071D754 /* Assets.xcassets */,
+				BB19009B2C7D3C050071D754 /* Info.plist */,
+			);
+			path = LingoLockWidget;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,10 +209,12 @@
 				BB19003B2C7D215E0071D754 /* Sources */,
 				BB19003C2C7D215E0071D754 /* Frameworks */,
 				BB19003D2C7D215E0071D754 /* Resources */,
+				BB1900882C7D3B890071D754 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				BB19009D2C7D3C050071D754 /* PBXTargetDependency */,
 			);
 			name = LingoLock;
 			productName = LingoLock;
@@ -183,6 +257,23 @@
 			productReference = BB1900592C7D215F0071D754 /* LingoLockUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		BB19008C2C7D3C040071D754 /* LingoLockWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB19009F2C7D3C050071D754 /* Build configuration list for PBXNativeTarget "LingoLockWidgetExtension" */;
+			buildPhases = (
+				BB1900892C7D3C040071D754 /* Sources */,
+				BB19008A2C7D3C040071D754 /* Frameworks */,
+				BB19008B2C7D3C040071D754 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LingoLockWidgetExtension;
+			productName = LingoLockWidgetExtension;
+			productReference = BB19008D2C7D3C040071D754 /* LingoLockWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -204,6 +295,9 @@
 						CreatedOnToolsVersion = 15.4;
 						TestTargetID = BB19003E2C7D215E0071D754;
 					};
+					BB19008C2C7D3C040071D754 = {
+						CreatedOnToolsVersion = 15.4;
+					};
 				};
 			};
 			buildConfigurationList = BB19003A2C7D215E0071D754 /* Build configuration list for PBXProject "LingoLock" */;
@@ -222,6 +316,7 @@
 				BB19003E2C7D215E0071D754 /* LingoLock */,
 				BB19004E2C7D215F0071D754 /* LingoLockTests */,
 				BB1900582C7D215F0071D754 /* LingoLockUITests */,
+				BB19008C2C7D3C040071D754 /* LingoLockWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -247,6 +342,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BB19008B2C7D3C040071D754 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB19009A2C7D3C050071D754 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +382,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BB1900892C7D3C040071D754 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1900922C7D3C040071D754 /* LingoLockWidgetBundle.swift in Sources */,
+				BB1900982C7D3C040071D754 /* AppIntent.swift in Sources */,
+				BB1900942C7D3C040071D754 /* LingoLockWidgetLiveActivity.swift in Sources */,
+				BB1900962C7D3C040071D754 /* LingoLockWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -291,6 +405,11 @@
 			isa = PBXTargetDependency;
 			target = BB19003E2C7D215E0071D754 /* LingoLock */;
 			targetProxy = BB19005A2C7D215F0071D754 /* PBXContainerItemProxy */;
+		};
+		BB19009D2C7D3C050071D754 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB19008C2C7D3C040071D754 /* LingoLockWidgetExtension */;
+			targetProxy = BB19009C2C7D3C050071D754 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -417,6 +536,7 @@
 		BB1900642C7D215F0071D754 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -445,6 +565,7 @@
 		BB1900652C7D215F0071D754 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -542,6 +663,58 @@
 			};
 			name = Release;
 		};
+		BB1900A02C7D3C050071D754 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LingoLockWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LingoLockWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.perotin.LingoLock.LingoLockWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB1900A12C7D3C050071D754 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LingoLockWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LingoLockWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.perotin.LingoLock.LingoLockWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -577,6 +750,15 @@
 			buildConfigurations = (
 				BB19006A2C7D215F0071D754 /* Debug */,
 				BB19006B2C7D215F0071D754 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB19009F2C7D3C050071D754 /* Build configuration list for PBXNativeTarget "LingoLockWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB1900A02C7D3C050071D754 /* Debug */,
+				BB1900A12C7D3C050071D754 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

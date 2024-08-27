@@ -11,7 +11,7 @@ import SwiftUI
 struct LingoLockApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(word: "Parola", definition: "Word")
         }
     }
 }
