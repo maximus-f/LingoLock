@@ -1,27 +1,43 @@
 import WidgetKit
 import SwiftUI
 
-// Provider for generating timeline entries
+/**
+    Hardcore list of words for now, need to use better storage
+ */
+let wordsList: [(word: String, definition: String)] = [
+    ("la forchetta (n.)", "fork"),
+    ("il amico (n.)", "friend"),
+    ("il libro (n.)", "book"),
+    ("la casa (n.)", "house"),
+    ("la scuola (n.)", "school")
+]
+
+
 struct Provider: AppIntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationAppIntent(), word: "Placeholder", definition: "Placeholder definition")
+        let randomWord = wordsList.randomElement() ?? ("Placeholder", "Placeholder definition")
+        return SimpleEntry(date: Date(), configuration: ConfigurationAppIntent(), word: randomWord.word, definition: randomWord.definition)
     }
 
     func snapshot(for configuration: ConfigurationAppIntent, in context: Context) async -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: configuration, word: "Example", definition: "An example definition")
+        let randomWord = wordsList.randomElement() ?? ("Example", "An example definition")
+        return SimpleEntry(date: Date(), configuration: configuration, word: randomWord.word, definition: randomWord.definition)
     }
 
+    /**
+        Time line to select random word from list
+     */
     func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<SimpleEntry> {
         var entries: [SimpleEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
+        
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, configuration: configuration, word: "znakomity (adj.)", definition: "excellent, superb, great")
+            let randomWord = wordsList.randomElement() ?? ("Default", "Default definition")
+            let entry = SimpleEntry(date: entryDate, configuration: configuration, word: randomWord.word, definition: randomWord.definition)
             entries.append(entry)
         }
-
+        
         return Timeline(entries: entries, policy: .atEnd)
     }
 }
@@ -50,7 +66,6 @@ struct LingoLockWidgetEntryView : View {
 
                 Text(entry.definition)
                     .font(.system(size: 11))
-                    
                     .foregroundColor(.black)
             }
             .padding()
@@ -120,5 +135,6 @@ extension ConfigurationAppIntent {
 #Preview(as: .systemSmall) {
     LingoLockWidget()
 } timeline: {
-    SimpleEntry(date: .now, configuration: .smiley, word: "Parola", definition: "Word")
+    let randomWord = wordsList.randomElement() ?? ("Parola", "Word")
+    SimpleEntry(date: .now, configuration: .smiley, word: randomWord.word, definition: randomWord.definition)
 }
