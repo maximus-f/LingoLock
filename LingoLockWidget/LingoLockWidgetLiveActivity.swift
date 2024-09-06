@@ -2,7 +2,7 @@
 //  LingoLockWidgetLiveActivity.swift
 //  LingoLockWidget
 //
-//  Created by Max Fuligni on 8/26/24.
+//  Created by Max Fuligni on 9/5/24.
 //
 
 import ActivityKit
