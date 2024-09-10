@@ -22,6 +22,14 @@
 		BBD2608A2C8A7D5600CEA3BF /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD260892C8A7D5600CEA3BF /* AppIntent.swift */; };
 		BBD2608C2C8A7D5700CEA3BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBD2608B2C8A7D5700CEA3BF /* Assets.xcassets */; };
 		BBD260902C8A7D5700CEA3BF /* LingoLockWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = BBD2607F2C8A7D5600CEA3BF /* LingoLockWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		BBFC91D72C90E7D6000567C7 /* words.json in Resources */ = {isa = PBXBuildFile; fileRef = BBFC91D62C90E7D6000567C7 /* words.json */; };
+		BBFC91E62C90EFCA000567C7 /* WordFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = BBFC91E52C90EFCA000567C7 /* WordFramework.docc */; };
+		BBFC91EC2C90EFCA000567C7 /* WordFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBFC91E22C90EFCA000567C7 /* WordFramework.framework */; };
+		BBFC91F32C90EFCA000567C7 /* WordFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFC91F22C90EFCA000567C7 /* WordFrameworkTests.swift */; };
+		BBFC91F42C90EFCA000567C7 /* WordFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = BBFC91E42C90EFCA000567C7 /* WordFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBFC91F72C90EFCA000567C7 /* WordFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBFC91E22C90EFCA000567C7 /* WordFramework.framework */; };
+		BBFC91F82C90EFCA000567C7 /* WordFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BBFC91E22C90EFCA000567C7 /* WordFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BBFC92022C90F159000567C7 /* WordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFC92012C90F159000567C7 /* WordManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +54,27 @@
 			remoteGlobalIDString = BBD2607E2C8A7D5600CEA3BF;
 			remoteInfo = LingoLockWidgetExtension;
 		};
+		BBFC91ED2C90EFCA000567C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1900372C7D215E0071D754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBFC91E12C90EFCA000567C7;
+			remoteInfo = WordFramework;
+		};
+		BBFC91EF2C90EFCA000567C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1900372C7D215E0071D754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BB19003E2C7D215E0071D754;
+			remoteInfo = LingoLock;
+		};
+		BBFC91F52C90EFCA000567C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BB1900372C7D215E0071D754 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBFC91E12C90EFCA000567C7;
+			remoteInfo = WordFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +87,17 @@
 				BBD260902C8A7D5700CEA3BF /* LingoLockWidgetExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFC91FC2C90EFCA000567C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BBFC91F82C90EFCA000567C7 /* WordFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -82,6 +122,13 @@
 		BBD260892C8A7D5600CEA3BF /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		BBD2608B2C8A7D5700CEA3BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBD2608D2C8A7D5700CEA3BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBFC91D62C90E7D6000567C7 /* words.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = words.json; sourceTree = "<group>"; };
+		BBFC91E22C90EFCA000567C7 /* WordFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WordFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBFC91E42C90EFCA000567C7 /* WordFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordFramework.h; sourceTree = "<group>"; };
+		BBFC91E52C90EFCA000567C7 /* WordFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = WordFramework.docc; sourceTree = "<group>"; };
+		BBFC91EB2C90EFCA000567C7 /* WordFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WordFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBFC91F22C90EFCA000567C7 /* WordFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordFrameworkTests.swift; sourceTree = "<group>"; };
+		BBFC92012C90F159000567C7 /* WordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBFC91F72C90EFCA000567C7 /* WordFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,16 +163,35 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBFC91DF2C90EFCA000567C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFC91E82C90EFCA000567C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFC91EC2C90EFCA000567C7 /* WordFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		BB1900362C7D215E0071D754 = {
 			isa = PBXGroup;
 			children = (
+				BBFC91D82C90E8EA000567C7 /* Models */,
+				BBFC91D52C90E706000567C7 /* Resources */,
 				BB1900412C7D215E0071D754 /* LingoLock */,
 				BB1900522C7D215F0071D754 /* LingoLockTests */,
 				BB19005C2C7D215F0071D754 /* LingoLockUITests */,
 				BBD260822C8A7D5600CEA3BF /* LingoLockWidget */,
+				BBFC91E32C90EFCA000567C7 /* WordFramework */,
+				BBFC91F12C90EFCA000567C7 /* WordFrameworkTests */,
 				BB1900712C7D3B870071D754 /* Frameworks */,
 				BB1900402C7D215E0071D754 /* Products */,
 			);
@@ -137,6 +204,8 @@
 				BB19004F2C7D215F0071D754 /* LingoLockTests.xctest */,
 				BB1900592C7D215F0071D754 /* LingoLockUITests.xctest */,
 				BBD2607F2C8A7D5600CEA3BF /* LingoLockWidgetExtension.appex */,
+				BBFC91E22C90EFCA000567C7 /* WordFramework.framework */,
+				BBFC91EB2C90EFCA000567C7 /* WordFrameworkTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -199,7 +268,51 @@
 			path = LingoLockWidget;
 			sourceTree = "<group>";
 		};
+		BBFC91D52C90E706000567C7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BBFC91D62C90E7D6000567C7 /* words.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BBFC91D82C90E8EA000567C7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BBFC91E32C90EFCA000567C7 /* WordFramework */ = {
+			isa = PBXGroup;
+			children = (
+				BBFC92012C90F159000567C7 /* WordManager.swift */,
+				BBFC91E42C90EFCA000567C7 /* WordFramework.h */,
+				BBFC91E52C90EFCA000567C7 /* WordFramework.docc */,
+			);
+			path = WordFramework;
+			sourceTree = "<group>";
+		};
+		BBFC91F12C90EFCA000567C7 /* WordFrameworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBFC91F22C90EFCA000567C7 /* WordFrameworkTests.swift */,
+			);
+			path = WordFrameworkTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		BBFC91DD2C90EFCA000567C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFC91F42C90EFCA000567C7 /* WordFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		BB19003E2C7D215E0071D754 /* LingoLock */ = {
@@ -210,11 +323,13 @@
 				BB19003C2C7D215E0071D754 /* Frameworks */,
 				BB19003D2C7D215E0071D754 /* Resources */,
 				BB1900882C7D3B890071D754 /* Embed Foundation Extensions */,
+				BBFC91FC2C90EFCA000567C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				BBD2608F2C8A7D5700CEA3BF /* PBXTargetDependency */,
+				BBFC91F62C90EFCA000567C7 /* PBXTargetDependency */,
 			);
 			name = LingoLock;
 			productName = LingoLock;
@@ -274,6 +389,43 @@
 			productReference = BBD2607F2C8A7D5600CEA3BF /* LingoLockWidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		BBFC91E12C90EFCA000567C7 /* WordFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBFC91F92C90EFCA000567C7 /* Build configuration list for PBXNativeTarget "WordFramework" */;
+			buildPhases = (
+				BBFC91DD2C90EFCA000567C7 /* Headers */,
+				BBFC91DE2C90EFCA000567C7 /* Sources */,
+				BBFC91DF2C90EFCA000567C7 /* Frameworks */,
+				BBFC91E02C90EFCA000567C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordFramework;
+			productName = WordFramework;
+			productReference = BBFC91E22C90EFCA000567C7 /* WordFramework.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BBFC91EA2C90EFCA000567C7 /* WordFrameworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBFC91FD2C90EFCA000567C7 /* Build configuration list for PBXNativeTarget "WordFrameworkTests" */;
+			buildPhases = (
+				BBFC91E72C90EFCA000567C7 /* Sources */,
+				BBFC91E82C90EFCA000567C7 /* Frameworks */,
+				BBFC91E92C90EFCA000567C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBFC91EE2C90EFCA000567C7 /* PBXTargetDependency */,
+				BBFC91F02C90EFCA000567C7 /* PBXTargetDependency */,
+			);
+			name = WordFrameworkTests;
+			productName = WordFrameworkTests;
+			productReference = BBFC91EB2C90EFCA000567C7 /* WordFrameworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -298,6 +450,13 @@
 					BBD2607E2C8A7D5600CEA3BF = {
 						CreatedOnToolsVersion = 15.4;
 					};
+					BBFC91E12C90EFCA000567C7 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					BBFC91EA2C90EFCA000567C7 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = BB19003E2C7D215E0071D754;
+					};
 				};
 			};
 			buildConfigurationList = BB19003A2C7D215E0071D754 /* Build configuration list for PBXProject "LingoLock" */;
@@ -317,6 +476,8 @@
 				BB19004E2C7D215F0071D754 /* LingoLockTests */,
 				BB1900582C7D215F0071D754 /* LingoLockUITests */,
 				BBD2607E2C8A7D5600CEA3BF /* LingoLockWidgetExtension */,
+				BBFC91E12C90EFCA000567C7 /* WordFramework */,
+				BBFC91EA2C90EFCA000567C7 /* WordFrameworkTests */,
 			);
 		};
 /* End PBXProject section */
@@ -326,6 +487,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBFC91D72C90E7D6000567C7 /* words.json in Resources */,
 				BB19004A2C7D215F0071D754 /* Preview Assets.xcassets in Resources */,
 				BB1900472C7D215F0071D754 /* Assets.xcassets in Resources */,
 			);
@@ -350,6 +512,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				BBD2608C2C8A7D5700CEA3BF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFC91E02C90EFCA000567C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFC91E92C90EFCA000567C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +569,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BBFC91DE2C90EFCA000567C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFC91E62C90EFCA000567C7 /* WordFramework.docc in Sources */,
+				BBFC92022C90F159000567C7 /* WordManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBFC91E72C90EFCA000567C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBFC91F32C90EFCA000567C7 /* WordFrameworkTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -410,6 +603,21 @@
 			isa = PBXTargetDependency;
 			target = BBD2607E2C8A7D5600CEA3BF /* LingoLockWidgetExtension */;
 			targetProxy = BBD2608E2C8A7D5700CEA3BF /* PBXContainerItemProxy */;
+		};
+		BBFC91EE2C90EFCA000567C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBFC91E12C90EFCA000567C7 /* WordFramework */;
+			targetProxy = BBFC91ED2C90EFCA000567C7 /* PBXContainerItemProxy */;
+		};
+		BBFC91F02C90EFCA000567C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BB19003E2C7D215E0071D754 /* LingoLock */;
+			targetProxy = BBFC91EF2C90EFCA000567C7 /* PBXContainerItemProxy */;
+		};
+		BBFC91F62C90EFCA000567C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBFC91E12C90EFCA000567C7 /* WordFramework */;
+			targetProxy = BBFC91F52C90EFCA000567C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -719,6 +927,112 @@
 			};
 			name = Release;
 		};
+		BBFC91FA2C90EFCA000567C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8SSZGY48JS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = me.perotin.WordFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BBFC91FB2C90EFCA000567C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 8SSZGY48JS;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = me.perotin.WordFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BBFC91FE2C90EFCA000567C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8SSZGY48JS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.perotin.WordFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LingoLock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LingoLock";
+			};
+			name = Debug;
+		};
+		BBFC91FF2C90EFCA000567C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8SSZGY48JS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.perotin.WordFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LingoLock.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LingoLock";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -763,6 +1077,24 @@
 			buildConfigurations = (
 				BBD260922C8A7D5700CEA3BF /* Debug */,
 				BBD260932C8A7D5700CEA3BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBFC91F92C90EFCA000567C7 /* Build configuration list for PBXNativeTarget "WordFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBFC91FA2C90EFCA000567C7 /* Debug */,
+				BBFC91FB2C90EFCA000567C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBFC91FD2C90EFCA000567C7 /* Build configuration list for PBXNativeTarget "WordFrameworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBFC91FE2C90EFCA000567C7 /* Debug */,
+				BBFC91FF2C90EFCA000567C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

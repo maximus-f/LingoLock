@@ -16,7 +16,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BB19008C2C7D3C040071D754"
+               BlueprintIdentifier = "BBD2607E2C8A7D5600CEA3BF"
                BuildableName = "LingoLockWidgetExtension.appex"
                BlueprintName = "LingoLockWidgetExtension"
                ReferencedContainer = "container:LingoLock.xcodeproj">
@@ -44,6 +44,19 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       shouldAutocreateTestPlan = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "BBFC91EA2C90EFCA000567C7"
+               BuildableName = "WordFrameworkTests.xctest"
+               BlueprintName = "WordFrameworkTests"
+               ReferencedContainer = "container:LingoLock.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"

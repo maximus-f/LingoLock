@@ -1,5 +1,6 @@
 import WidgetKit
 import SwiftUI
+import WordFramework
 
 /**
     Hardcore list of words for now, need to use better storage
@@ -13,7 +14,10 @@ let wordsList: [(word: String, definition: String)] = [
 ]
 
 
+
 struct Provider: AppIntentTimelineProvider {
+    
+
     func placeholder(in context: Context) -> SimpleEntry {
         let randomWord = wordsList.randomElement() ?? ("Placeholder", "Placeholder definition")
         return SimpleEntry(date: Date(), configuration: ConfigurationAppIntent(), word: randomWord.word, definition: randomWord.definition)
@@ -30,13 +34,14 @@ struct Provider: AppIntentTimelineProvider {
     func timeline(for configuration: ConfigurationAppIntent, in context: Context) async -> Timeline<SimpleEntry> {
         var entries: [SimpleEntry] = []
         let currentDate = Date()
-        
+        let words = WordManager.shared.words // this line
+
         for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let randomWord = wordsList.randomElement() ?? ("Default", "Default definition")
-            let entry = SimpleEntry(date: entryDate, configuration: configuration, word: randomWord.word, definition: randomWord.definition)
-            entries.append(entry)
-        }
+                    let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
+            let randomWord = words.randomElement() ?? Word(word: "Default", definition: "Default definition")
+                    let entry = SimpleEntry(date: entryDate, configuration: configuration, word: randomWord.word, definition: randomWord.definition)
+                    entries.append(entry)
+                }
         
         return Timeline(entries: entries, policy: .atEnd)
     }
@@ -70,7 +75,7 @@ struct LingoLockWidgetEntryView : View {
             }
             .padding()
             .background(Color.white)
-            .cornerRadius(3)
+            .cornerRadius(7)
             .opacity(1.0)
 
         case .accessoryInline:
